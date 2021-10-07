@@ -17,6 +17,16 @@ body {
     clear: both;
 }
 
+.section2 {
+    transform: translate(-100vw);
+    transition: 1s linear;
+}
+
+.section2.active {
+    transform: translate(0px);
+}
+
+
 
 header {
     width: 100%;
@@ -87,5 +97,10 @@ p {
     display: block;
     margin: auto;
     margin-top: 100px;
+    transform: scale(0);
+    transition: linear 1s;
+}
 
+.summaryPhoto.show {
+    transform: scale(1);
 }
